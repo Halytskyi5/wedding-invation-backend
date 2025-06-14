@@ -9,10 +9,28 @@ public class AnswerEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String people;
+    private String name;
+    private String family;
+
     private Boolean fromGroom;
 
     public AnswerEntity() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getFamily() {
+        return family;
+    }
+
+    public void setFamily(String family) {
+        this.family = family;
     }
 
     public Long getId() {
@@ -21,14 +39,6 @@ public class AnswerEntity {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getPeople() {
-        return people;
-    }
-
-    public void setPeople(String people) {
-        this.people = people;
     }
 
     public Boolean getFromGroom() {
